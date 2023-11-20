@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    font-family: "Proxima Nova", system-ui, sans-serif;
+    color: rgba(0,0,0,.5);
+  }
+
+  
+}
+
+.nav-links li:hover, li:focus {
+  color: black !important;
+}
+
+#nav-links ul li a {
+  -webkit-text-stroke: 1px white;
+}
+
+#nav-links button {
+  -webkit-text-stroke: 1px white;
+}
+@media screen and (min-width: 768px) {
+  #nav-links ul li a {
+    -webkit-text-stroke: 0px;
+  }
+
+  #nav-links button {
+    -webkit-text-stroke: 0px;
+  }
+  
+}
+
+
+
