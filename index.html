@@ -7,39 +7,47 @@
 </head>
 <body>
   <nav id="nav" class="flex justify-between items-center md:shadow-md md:px-10 md:justify-start lg:px-64 ">
-      <div class="flex justify-between w-full shadow-md md:w-fit md:shadow-none lg:shadow-none">
+      <div class="flex justify-between items-center w-full shadow-md md:w-fit md:shadow-none lg:shadow-none">
         <a href="/" class="cursor-pointer px-2">
           <img src="src/assets/logo.png" class="h-16"/>
         </a>
-        <img id="menu" src="src/assets/menu.svg" class="px-1 cursor-pointer md:hidden lg:hidden"/>
+        <div class="px-2">
+          <img id="menu" src="src/assets/menu.svg" class="cursor-pointer md:hidden lg:hidden"/>
+          <img id="close-menu" src="src/assets/closeIcon.svg" class="hidden cursor-pointer"/>
+        </div>
       </div>
       <div id="nav-links" class="hidden gap-5 px-10 py-24 text-2xl w-full uppercase flex-1 bg-primary md:flex md:normal-case
                                  md:py-0 md:text-base md:px-0 md:justify-end md:bg-transparent lg:flex lg:flex-1 lg:justify-end">
         <ul class="flex flex-col gap-5 w-full md:flex-row md:w-fit md:items-center md:gap-4 cursor-pointer  px-4">
-          <li>
+          <li class="nav-item">
             <a class="text-transparent md:text-inherit" href="/" >
               Home
             </a>
           </li>
-          <li>
+          <li class="nav-item">
             <a class="text-transparent md:text-inherit" href="/open-source" >
               Open source
             </a>
           </li>
-          <li>
+          <li class="nav-item">
             <a  class="text-transparent md:text-inherit" href="/blog">
               Blog
             </a>
           </li>
-          <li >
+          <li class="nav-item">
             <a class="text-transparent md:text-inherit" href="about-us">
               About us
             </a>
           </li>
         </ul>
-        <button class="w-fit text-transparent md:text-white uppercase bg-primary  rounded-full px-4 py-1 md:normal-case">Reach us</button>
+        <button class="nav-item w-fit text-transparent md:text-white uppercase bg-primary  rounded-full px-4 py-1 md:normal-case">Reach us</button>
       </div>
   </nav>
+  <div>
+    <div class="w-4/5">
+      <img src="src/assets/banner.svg"/>
+    </div>
+  </div>
   <script src="src/index.js"></script>
 </body>
 </html>
